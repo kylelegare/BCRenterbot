@@ -3,9 +3,9 @@ from langchain import OpenAI
 import streamlit as st
 import openai
 
-
-# Set the OpenAI API key
-st.secrets['openai']['api_key']
+#set openai API
+openai_api_key = st.secrets['OPENAI_API_KEY']
+openai.api_key = openai_api_key
 
 #Page Config For Streamlit
 st.set_page_config(page_title='Ask the BC Tenancy Act')
